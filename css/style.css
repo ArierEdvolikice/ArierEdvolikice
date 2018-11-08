@@ -1,0 +1,972 @@
+html, body {margin: 0; padding: 0; height: 100%; background-color: #EAE3EA; scroll-behavior: smooth;}
+
+section {min-height: 100%;
+}
+a {text-decoration: none;
+}
+li {list-style-type: none;
+}
+
+h1, a {
+font-family: 'Arvo', sans-serif;
+font-weight:; color:#000000;
+text-transform: uppercase; 
+margin: 0 0 0 0;
+}
+
+h1 {
+font-size: 50px;
+margin-right: 10%;
+margin-top: 10px;
+color: white;
+text-shadow: 0 5px 5px rgba( 0, 0, 0, 0.5);
+border-radius: 5px;
+}
+
+h2 {
+font-family: 'Arvo', serif; 
+font-weight: 400; 
+font-size: 60px; 
+margin: -15px 0 0 0;
+color: white; 
+margin-right: 10%;
+box-shadow: 0 5px 5px rgba( 0, 0, 0, 0.3);
+text-shadow: 0 5px 5px rgba( 0, 0, 0, 0.3);
+border-radius: 5px;
+}
+
+h3 {
+font-family: 'Arvo', serif;
+font-weight: 400; 
+font-size: 26px;
+margin-top: 10px;
+}
+
+p {
+font-family: 'Arvo', sans-serif; 
+font-size: 22px; 
+font-stretch: semi-expanded; 
+font-kerning: normal;
+color: #7a7a7a;
+}
+
+ #Logo_EOBX, #Obras, #Portifólio, li, img, .button{
+transition: all 500ms; 
+-webkit-transition: 500ms; 
+-moz-transition: 500ms;
+-o-transition: 500ms;
+}
+
+
+
+
+.Salvando:after {
+    content: ' .';
+    animation: dots 2s steps(5, end) infinite;
+    margin: 0px 0px 0px 4px;
+    padding: -4px -12px -9px 14px;
+    position: absolute;
+  }
+
+@keyframes dots {
+  0%, 20% {
+    color: rgba(0,0,0,0);
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);}
+  40% {
+    color: white;
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);}
+  60% {
+    text-shadow:
+      .25em 0 0 white,
+      .5em 0 0 rgba(0,0,0,0);}
+  80%, 100% {
+    text-shadow:
+      .25em 0 0 white,
+      .5em 0 0 white;}
+    }
+
+
+.spacer {
+  width: 100%;
+  height: 58px;
+}
+/* HEADER **************/
+
+
+nav{
+  width: 100%;
+  background: #454545;
+  z-index: 3;
+  opacity:0.8;
+  transition: .3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0);
+  text-align: right;
+}
+
+
+nav.color {
+  background: rgb(152,209,176, 1);
+}
+
+nav.color a{
+color: #ffffff;
+
+}
+
+nav.color ul li:hover {
+background: #91B49C;
+}
+
+nav { 
+  background: #91B49C;
+}
+
+nav ul li:hover { 
+  background: #ffffff;
+}
+
+ul {
+  margin: 0 0 0 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+}
+
+
+#Logo_EOBX img{
+  float: left;
+  width: 150px;
+  height: 80px;
+}
+
+#Logo_EOBX :hover {
+  z-index: 1;
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.toggle {
+  width: 100%;
+  padding: 10px 20px;
+  background:#91B49C;
+  text-align: right;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 30px;
+  display: none;
+}
+
+
+/* HOME **************/
+
+
+section .Imagem_Fundo {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+}
+
+section .Imagem_Fundo img {
+  width: 100%;
+  max-height: 200%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform:translate(-50%);
+}
+
+
+.Imagens{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 50%;
+  padding: 20px;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+
+#Erick_Foto_Home img{
+    max-width:300px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+    transition: all 1.5s linear;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+#Erick_Foto_Home :hover {
+  transform: scale(1.2);
+  opacity: 1;
+  box-shadow: 0 5px 5px rgba( 0, 0, 0, 0.3);
+}
+
+#Seta_Foto_Home img {
+  margin-top: 30%;
+  opacity: 0.5;
+}
+
+#Seta_Foto_Home :hover {
+  padding-top: 10px;
+  opacity: 1;
+}
+
+
+/* Erick de Oliveira **************/
+
+#ErickdeOliveira {
+  clear: both;
+  width: 100%;
+}
+
+#ErickdeOliveira h1{
+  padding-left: 7%;
+    background-color: #856357;
+    margin-right: 6%;
+}
+
+#ErickdeOliveira h2{
+  padding-left: 7%;
+    background-color: #856357;
+    margin-right: 6%;
+}
+
+#ErickdeOliveira h3{
+  text-align: justify;
+  padding-left: 6%;
+  margin-right: 10%;
+}
+
+.Serviços {
+  margin-left: 8%;
+}
+
+
+.Serviços .box {
+  position: relative;
+  width: calc(340px);
+  height: calc(260px);
+  background: #000;
+  float: left;
+  margin:6px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.Serviços .box .icone {
+
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #f00;
+transition: 0.5s;
+z-index: 1;
+}
+
+.Serviços .box:hover .icone {
+  top: 20px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.Serviços .box .icone .fa{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.Serviços .box:hover .icone .fa{
+  font-size: 40px;
+}
+
+.Serviços .box .Texto_01 {
+  position: absolute;
+  top: 100%;
+  height: calc(100% - 100px);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  opacity: 0.5;
+}
+
+.Serviços .box:hover .Texto_01 {
+   top: 100px;
+   opacity: 1;
+}
+
+.Serviços .box .Texto_01 h4{
+  margin:0 0 0 10px;
+  padding: 0;
+  color: #fff;
+  font-size: 24px;
+}
+
+.Serviços .box .Texto_01 p{
+  margin:0;
+  padding: 0;
+  color: #fff;
+}
+
+.Serviços .box:nth-child(1) .icone {
+  background: #91B49C;
+}
+
+.Serviços .box:nth-child(1){
+  background: #98d1b0;
+}
+
+.Serviços .box:nth-child(2) .icone {
+  background: #91B49C;
+}
+
+.Serviços .box:nth-child(2){
+  background: #98d1b0;
+}
+
+.Serviços .box:nth-child(3) .icone {
+  background: #91B49C;
+}
+
+.Serviços .box:nth-child(3){
+  background: #98d1b0;
+}
+
+/* Obras **************/
+
+#Obras {
+  width: 100%;
+  clear: both;
+}
+
+#Obras h1{
+  padding-left: 2%;
+  background-color: #91B49C;
+  margin-left: 6%;
+  margin-right: 0;
+}
+
+#Obras h2{
+  padding-left: 2%;
+  background-color: #91B49C;
+  margin-left: 6%;
+  margin-right: 0;
+}
+
+#Obras h3{
+  text-align: justify; 
+  padding-left: 6%;
+  margin-right: 10%;
+  margin-left: 0%;
+}
+
+#Obras img:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  box-shadow: 0 5px 5px rgba( 0, 0, 0, 0.3);
+}
+
+.Aspas_01 {
+font-family: Georgia, serif;
+font-size: 25px;
+font-style: italic;
+line-height: 1.45;
+}
+
+.Aspas_01:before {
+display: block;
+content: "\201C";
+font-size: 80px;
+color: #7a7a7a;
+line-height: 20px;
+text-align: center;
+}
+
+.Aspas_01 .cite_01 {
+color: #999999;
+font-size: 18px;
+display: block;
+margin-top: 5px;
+text-align: right;
+}
+
+.Aspas_02 {
+font-family: Georgia, serif;
+font-size: 25px;
+font-style: italic;
+line-height: 1.45;
+}
+
+.Aspas_02:before {
+display: block;
+content: "\201C";
+font-size: 80px;
+color: #7a7a7a;
+line-height: 20px;
+text-align: center;
+}
+
+.Aspas_02 .cite_02 {
+color: #999999;
+font-size: 18px;
+display: block;
+margin-top: 5px;
+text-align: right;
+}
+
+
+
+<div data-aos="projetos_01"></div>
+
+<div data-aos="projetos_02"></div>
+
+ #projetos_01{
+  clear: both;
+  padding-top: 8%;
+ }
+
+.projetos_01{
+  margin-left: 6%;
+  margin-right: 10%;
+}
+
+.projetos_01 img{
+    border: transparent thin solid;
+    float: left;
+    max-width: 600px;
+    width: 300px;
+    height: 450px;
+    border: 10px solid white;
+    margin-right: 3%;
+    border-radius: 10px;
+}
+
+.projetos_01 blockquote {
+  padding-top: 8%;
+  text-align: justify;
+  margin: 0 0 0 0;
+}
+
+ #projetos_02{
+  clear: both;
+  padding-top: 8%;
+ }
+
+ .projetos_02{
+  margin-right: 10%;
+  margin-left: 6%;
+}
+
+.projetos_02::after{
+  margin-top: 15%;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.projetos_02 img{
+    border: transparent thin solid;
+    float: right;
+    max-width: 600px;
+    width: 300px;
+    height: 450px;
+    border: 10px solid white;
+    margin-left: 3%;
+    border-radius: 10px;
+}
+
+.projetos_02 blockquote {
+  padding-top: 4.5%;
+  text-align: justify;
+  margin: 0 0 0 0;
+ }
+
+
+
+
+
+/* Portifóleo **************/
+
+
+
+#Portifólio div{
+  width: 100%;
+}
+
+
+#Portifólio img:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  box-shadow: 0 5px 5px rgba( 0, 0, 0, 0.3);
+}
+
+#Portifólio h1{
+  padding-left: 7%;
+    background-color: #856357;
+    margin-right: 6%;
+}
+
+#Portifólio h2{
+  padding-left: 7%;
+    background-color: #856357;
+    margin-right: 6%;
+}
+
+#Portifólio h3{
+  text-align: justify; padding-left: 6%;
+  margin-right: 10%;
+}
+
+.Projetos {
+  margin-left: 4.5%;
+}
+
+
+#Projetos img{
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  margin: 0 0 0 4px;
+}
+
+#Projetos ul{
+  padding-right:4px;
+}
+
+#Projetos ul li{
+  float: left;
+}
+
+/* Sobre Mim **************/
+
+
+.Sobremimfoto {
+    margin-right: 14%;
+    margin-left: 8%;
+    padding-top: 15px;
+}
+
+#Sobremim h1{
+    text-align: left;
+    padding-left: 1%;
+    background-color: #91B49C;
+    margin-left: 6%;
+    margin-right: 0;
+}
+
+#Sobremim h2{
+  text-align: left;
+  padding-left: 1%;
+  background-color: #91B49C;
+  margin-left: 6%;
+  margin-right: 0;
+  box-shadow: 0 5px 5px rgba( 0, 0, 0, 0.3);
+}
+
+#Sobremim h3{
+  text-align: justify;
+  padding-left: 6%;
+  padding-right: 10%;
+}
+
+
+#Sobremim {
+  text-align: center;
+  clear: both;
+}
+
+#Sobremim img {
+  width: 31%;
+  float: left;
+  border-radius: 50%;
+  margin: 0 4% 0 0;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transform-style: preserve-3d;
+  transition: all 7.0s linear;
+}
+
+#Sobremim img:hover {
+  transform: scale(1.2);
+  transition: all 0.5s linear;
+  opacity: 1;
+  box-shadow: 0 5px 5px rgba( 0, 0, 0, 0.3);
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+#Sobremim p {
+  text-align: justify;
+  padding-top: 6%;
+}
+
+
+/* Contato **************/
+
+#Contate-me {
+  text-align: center;
+  clear: both;
+}
+
+#Contate-me h1{
+  background-color: #856357;
+  margin-right: 0;
+  box-shadow: 0 5px 5px rgba( 0, 0, 0, 0.3);
+}
+
+#ofim {
+  clear: both;
+}
+
+form {
+  padding-top: 5%;
+}
+
+form input, textarea {
+  font-family:'Arvo', serif;
+  font-size: 15px; 
+  margin-bottom: 10px;
+  border-radius: 2px;
+  border: 2px solid;
+  border-color: #494949;
+  outline: none;
+}
+
+form input:first-child {
+  margin-top: 10px;
+}
+
+form input {
+  width: 552px;
+  height: 30px;
+}
+
+form textarea {
+  width: 550px;
+  height: 200px;
+  resize: none;
+}
+
+.input_text {
+  color: #494949;
+  padding-left: 10px;
+}
+
+::-webkit-input-placeholder{color: #999999;}
+::-moz-placeholder {color: #999999;}
+::-ms-input-placeholder {color: #999999;}
+::-moz-placeholder {color: #999999;}
+::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+/* Track */
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #91B49C; 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #91B49C; 
+}
+
+.button {
+  background-color: #f0f0f0;
+  color: #494949;
+  width: 566px;
+  height: 50px;
+}
+
+.button:hover{
+  background-color: #91B49C;
+  color: white;
+}
+
+/* Footer **************/
+
+footer {
+  width: 100%;
+  height: 70px;
+  background-color: #3f3f3f;
+}
+
+footer p {
+  text-align: center;
+  color: #f0f0f0;
+  padding-top: 20px;
+}
+
+#Botão {
+  font-size: 30px;
+    font-family: 'Arvo', sans-serif;
+    background-color: #98d1b0;
+    color: white;
+    transition: all 0.5s linear;
+    border-radius: 5px;
+}
+
+#Botão:hover {
+    font-size: 30px;
+    font-family: 'Arvo', sans-serif;
+    background-color: #91B49C;
+    transform-style: preserve-3d;
+    transition: all 0.5s linear;
+    color: white;
+    margin-top: 5px;
+    box-shadow: 0px 5px 5px 0px rgba( 0, 0, 0, 0.3);
+}
+
+/* MEDIA QUERIES ***************************/
+
+/* TABLETS */
+
+@media screen and (max-width: 900px) {
+
+
+#Logo_EOBX img{
+ display: none;
+}
+
+#Serviços {
+  width: auto;
+}
+
+#Serviços div {
+  width: 55%;
+}
+
+.Serviços{
+  width: 100%;
+  margin: 0px 0px 0px 6%;
+}
+
+#Projetos {
+    width: auto;
+}
+
+  .projetos_02 p {
+  padding-top: 0px;
+  margin: 0 0 0 0;
+ }
+
+ .projetos_01 p {
+  padding-top: 0px;
+ }
+
+ .Imagem_Fundo img {
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform:translate(-50%);
+}
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .toggle {
+    display: block;
+  }
+
+  ul {
+    width: 100%;
+    display: none;
+  }
+
+  ul li {
+    display: block;
+    text-align: center;
+  }
+
+  .Projetos ul, li {
+    display: unset;
+  }
+
+  .active {
+    display: block;
+  }
+
+  #Erick_Foto_Home img{
+    width: 250px;
+    height: 250px;
+  }
+
+  #Projetos {
+    width: auto;
+  }
+
+
+  .Imagem_Fundo img {
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform:translate(-50%);
+}
+
+.Obras {
+  clear: both;
+}
+
+.projetos_02 p {
+  padding-top: 0px;
+  margin: 0 0 0 0;
+ }
+
+ .projetos_01 p {
+  padding-top: 0px;
+ }
+
+
+ form input, form textarea {
+    width: 70%;
+  }
+  .button {
+    width: 75%;
+  }
+
+#projetos_01 img{
+  float: none;
+}
+
+#projetos_02 img{
+  float: none;
+}
+
+}
+
+
+
+/* MOBILE */
+
+
+@media screen and (max-width: 480px){
+  #Logo_EOBX {
+    width: 90px;
+    margin-left: 30px;
+  }
+
+  .Imagem_Fundo img {
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform:translate(-50%);
+}
+
+  #Erick_Foto_Home img{
+    width: 200px;
+    height: 200px;
+  }
+
+  #Serviços {
+    width: auto;
+  }
+
+#Serviços div{
+  width: 55%;
+}
+
+.Serviços{
+  width: 100%;
+  float: none;
+  margin-left: 5%;
+}
+
+#projetos_01 img{
+  float: none;
+}
+
+#projetos_02 img{
+  float: none;
+}
+
+  header nav{
+    margin:0;
+    float: none;
+  }
+
+  header nav ul {
+    height: 1;
+    overflow: hidden;
+    margin:0;
+    padding: 0;
+    width: 100%;
+  }
+  header nav ul.open {
+    height: auto;
+  }
+
+  header nav ul li {
+    width: 100%;
+    padding: 5px 0;
+    margin: 0;
+    font-size: 11px;
+    border-top: 1px solid #91B49C;
+  }
+
+  header nav ul li:hover {
+    background-color: #eeeeee;
+  }
+
+  #Home h1 {
+    font-size: 60px;
+    margin-top: 200px;
+  }
+
+  #Home h2 {
+    width: 70%;
+    height: auto;
+  }
+
+
+ form input, form textarea {
+    width: 50%;
+  }
+  .button {
+    width: 55%;
+  }
+  }
+}
+
+
+
