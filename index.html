@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Erick de Oliveira</title>
+
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/aos.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
+    <script src ="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+    <script>
+    	function showDiv() {
+    		document.getElementById('Contate-me').style.display = "block";
+    		document.getElementById('Contate-me').scrollIntoView()
+    	}
+    </script>
+    
+    <script type="text/javascript">
+      $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        $(".Imagem_Fundo img").css({
+          width: (100 + scroll/10) + "%"
+        })
+      })
+    </script>
+
+    <script type="text/javascript">
+        $(window).on('scroll', function() {
+          if($(window).scrollTop()) {
+            $('nav').addClass('color');
+          }
+          else {
+            $('nav').removeClass('color');
+          }
+        })
+    </script>    
+   </head>
+<body>
+
+  <!-- HEADER ----------------------------->
+
+    <header>
+      <div class="wrapper" id="wrapper">
+          <nav>
+            <div id="Logo_EOBX" class="Logo_EOBX">
+              <!--<a href="#Home"><img src="img/Logo_EOBX.png" alt="EOBX"></a>------->
+            </div>
+            <div id="toggle" class="toggle">
+          <i class="fa fa-bars menu" aria-hidden="true"></i>
+        </div>
+              <ul>
+                <a href="#Home"><li>Home</li></a>
+                <a href="#ErickdeOliveira"><li>Erick de Oliveira</li></a>
+                <a href="#Obras"><li>Obras</li></a>
+                <a href="#Portifólio"><li>Portifólio</li></a>
+                <a href="#Sobremim"><li>Sobre mim</li></a>
+               </ul>
+          </nav>
+          <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+          <script type="text/javascript">
+            $(document).ready(function(){
+              $('.menu').click(function(){
+                $('ul').toggleClass('active');
+              })
+            })
+          </script>
+      </div>
+    </header>
+
+
+    <!-- HOME ----------------------------->
+
+      <section id="Home" class="Home">
+        <div id="Imagem_Fundo" class="Imagem_Fundo">
+          <img src="img/Fundo.jpg">
+        </div>
+        <div id="Imagens" class="Imagens">
+        <a href="#ErickdeOliveira">
+          <div id="Erick_Foto_Home" class="Erick_Foto_Home">
+            <img src="img/Erick_foto.jpg" alt="Foto do Autor Erick de Oliveira">
+          </div>
+          <div id="Seta_Foto_Home" class="Seta_Foto_Home">
+            <img src="img/down_arrow.png" alt="seta">
+          </div>
+        </a>
+      </div>
+      </section>
+
+      <!-- ERICK DE OLIVEIRA ----------------------------->
+
+      <section id="ErickdeOliveira">
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <h1>Erick de Oliveira:</h1>
+        <h2 class="Salvando">Escritor, Ilustrador, Diagramador</h2>
+        <h3>... e outros atributos. Foco na escrita, desenho e ilustração digital. Contudo, trabalho como revisor e diagramador nas horas vagas.</h3>
+      <div class="Serviços">
+          <div data-aos="fade-up" class="box">
+            <div class="icone"><i class=" fa fa-pencil-square-o" aria-hidden="true"></i></div>
+            <div class="Texto_01">
+              <h4>Erick de Oliveira</h4>
+              <p>Erick de Oliveira Bessa Xavi. </p>
+            </div> 
+          </div>
+          <div data-aos="fade-down" class="box">
+            <div class="icone"><i class=" fa fa-check" aria-hidden="true"></i></div>
+            <div class="Texto_01">
+              <h4>Erick de Oliveira</h4>
+              <p>Erick de Oliveira Bessa Xavi. </p>
+            </div>  
+          </div> 
+          <div data-aos="fade-up" class="box">
+            <div class="icone"><i class=" fa fa-file-word-o" aria-hidden="true"></i></div>
+            <div class="Texto_01">
+              <h4>Erick de Oliveira</h4>
+              <p>Erick de Oliveira Bessa Xavi. </p>
+            </div> 
+         </div>
+      </div>        
+
+      </section>
+
+      <!-- OBRAS ----------------------------->
+
+      <section id="Obras" class="Obras">
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <h1>Obras:</h1>
+        <h2 class="Salvando">Só aquelas que estão em papel</h2>
+        <h3>... o que não são todas. Mas, atualmente, tenho duas obras escritas e uma em andamento; uma trilogia em andamento. Além disso, pequenos contos e poemas acrescentam em meu histórico.
+        </h3>
+
+          <div data-aos="fade-down" class="projetos_01" id="projetos_01">
+              <img src="img/Livro_01.jpg" alt="Livro_01"/>
+              <blockquote class="Aspas_01">E ele cavalgou para a floresta com fúria e represália, carregando a Esfera no ato de aniquilar o mal na grande e poderosa batalha.
+                E os dias nasceram mais felizes sob a sombra da Montanha do Norte,
+                cujo povo que da terra vivia não mais sofreria com a dor da tristeza da morte.
+                As auroras brilharam douradas nas almas dos homens jubilosos.
+                Mulheres e filhos cantaram e velhos clamaram para o sorriso da Lua em vitória a crueldade do mal sem idade.
+                <cite class="cite_01">A Jornada de um Assistente e a Esfera da Lua</cite>
+           	  </blockquote>
+          </div>
+          <div data-aos="fade-up" class="projetos_02" id="projetos_02">
+              <img src="img/Livro_02.png" alt="Livro_02">
+              <blockquote class="Aspas_02">A cada novo mundo um bem nasce, uma vontade ou uma ideia, ou uma criança destinada a um reino sem súditos e territórios sem fronteiras. Herdeira de todos os tesouros acima dos desprezíveis, uma criança – filha das estrelas e das arcanas luzes serpenteantes do mais Norte e Sul – fada-se ao retorno. De tempos em tempos, guiada por mãos além das humanas, azo a escuridão sem oponentes, tamanha natureza cresce guiada para a sua morada ao ponto mais alto; lugar onde a terra compromete-se ao céu e a verdadeira forma retorna ao mundo a cevar esperança e fé nas almas outrora perdidas.
+              <cite class="cite_02">A Jornada de um Assistente e a Lança de Aurora</cite>
+              </blockquote>
+          </div>
+      </section>
+
+      <!-- PORTIFÓLIO ----------------------------->
+
+      <section id="Portifólio">
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <h1>Port..., portfó..., portefólio:</h1>
+        <h2 class="Salvando">Meu pai, que coisa</h2>
+        <h3>... pois, independente da palavra correta, aqui trago algumas das quais gosto mais. Talvez não sejam as mais refinadas, ainda assim estas me foram as de maior carinho de se desenvolver.</h3>
+
+        <div class="Projetos" id="Projetos">
+          <ul>
+            <li><img src="https://via.placeholder.com/1280x720" alt="Projeto_01"></li>
+            <li><a href="#"><img src="https://via.placeholder.com/1280x720" alt="Projeto_02"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/1280x720" alt="Projeto_03"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/1280x720" alt="Projeto_04"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/1280x720" alt="Projeto_05"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/1280x720" alt="Projeto_06"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/1280x720" alt="Projeto_07"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/1280x720" alt="Projeto_08"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/1280x720" alt="Projeto_09"></a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SOBRE MIM ----------------------------->
+
+      <section id="Sobremim">
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <h1>Sobre mim:</h1>
+        <h2 class="Salvando">O que não é muito</h2>
+        <h3>... em vista que estudo e trabalho a maior parte do tempo. Almejo melhorar meus conhecimentos, aprimorando-os, lapidando-os, tornando-me a cada dia um profissional compretente e um probo ser humano.</h3>
+              <div data-aos="fade-right" class="Sobremimfoto">
+              <img class="erickteste" src="img/Erick_Caric.jpg" alt="Erick_Avatar">
+              <p class="textooo">
+          Bem... este sou eu! Gostou de mim? É claro que sim... como não poderia? Haha. Brincadeira a parte, fico feliz que tenha vindo me visitar e, quem sabe, me melhor conhecer? Entre em contato, leia as minhas obras publicadas, visite minhas redes sociais. Quero saber sobre você também! Há tanto a se ver e falar...
+              </p>
+              	<div>
+              		<input id="Botão" type="button" name="answer" value="Contate-me" onclick="showDiv()" />
+              		<a href="#Contate-me"></a>
+          		</div>
+            </div>
+      </section>
+
+      <!-- CONTATO ----------------------------->
+
+      <section id="Contate-me" style="display:none;" class="answer_list">
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <h1>Contate-me:</h1>
+
+        <form>
+          <input class="input_text" type="nome" tabindex="1" placeholder="Nome"><br>
+          <input class="input_text" type="email" tabindex="2" placeholder="E-mail"><br>
+          <textarea class="input_text" tabindex="3" placeholder="Digite aqui"></textarea><br>
+          <input class="button" type="submit">
+        </form>
+      </section>
+
+      <!-- FOOTER ----------------------------->
+
+      <footer id="ofim">
+        <p>
+          &copy; Erick de Oliveira — 2018-2018
+                </p>
+
+      </footer>
+      <script type="text/javascript"></script>
+      <script src =" css\aos.js"></script>
+      <script type ="text/javascript">
+        AOS.init({
+          offset: 200,
+          duration: 2000,
+        });
+      </script>
+
+  </body>
+</html>
