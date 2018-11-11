@@ -707,6 +707,7 @@ text-align: right;
 }
 
 .social {
+  display: none;
   position: absolute;
   padding-left: 5vh;
   bottom: -120px;
