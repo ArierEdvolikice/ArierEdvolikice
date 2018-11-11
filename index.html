@@ -1,40 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
   <head>
+  	<title>Erick de Oliveira</title>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Erick de Oliveira</title>
-
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-     <link rel="stylesheet" type="text/css" href="https://arieredvolikice.github.io/css/style.css">
-    <link rel="stylesheet" type="text/css" href="https://arieredvolikice.github.io/img">
+    
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/aos.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arvo:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arvo:400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
+    
     <script src ="https://code.jquery.com/jquery-3.2.1.js"></script>
 
+	<!------Faz com que a seção 'Contate-me' apareça ao click do botão.------>
     <script>
     	function showDiv() {
     		document.getElementById('Contate-me').style.display = "block";
     		document.getElementById('Contate-me').scrollIntoView()
     	}
     </script>
+
     
-    <script type="text/javascript">
+    <!---<script type="text/javascript">
       $(window).scroll(function(){
         var scroll = $(window).scrollTop();
         $(".Imagem_Fundo img").css({
           width: (100 + scroll/10) + "%"
         })
       })
-    </script>
+    </script>---->
 
-    <script type="text/javascript">
+<!------ A barra de menu muda de configuração ao ativar o scroll ----->
+    <script>
         $(window).on('scroll', function() {
           if($(window).scrollTop()) {
             $('nav').addClass('color');
@@ -43,9 +44,24 @@
             $('nav').removeClass('color');
           }
         })
-    </script>    
+    </script>
+
+     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+          <script>
+            $(document).ready(function(){
+              $('.menu').click(function(){
+                $('ul').toggleClass('active');
+              })
+            })
+          </script>
+
    </head>
 <body>
+		 <!---<script>
+    	$(document).ready(function(){
+    $(this).scrollTop(0);
+	});
+    </script> ------->
 
   <!-- HEADER ----------------------------->
 
@@ -53,28 +69,20 @@
       <div class="wrapper" id="wrapper">
           <nav>
             <div id="Logo_EOBX" class="Logo_EOBX">
-              <!--<a href="#Home"><img src="img/Logo_EOBX.png" alt="EOBX"></a>------->
+              <a href="#Home"><img src="img/Logo_EOBX.png" alt="EOBX"></a>
             </div>
             <div id="toggle" class="toggle">
           <i class="fa fa-bars menu" aria-hidden="true"></i>
         </div>
               <ul>
-                <a href="#Home"><li>Home</li></a>
-                <a href="#ErickdeOliveira"><li>Erick de Oliveira</li></a>
-                <a href="#Obras"><li>Obras</li></a>
-                <a href="#Portifólio"><li>Portifólio</li></a>
-                <a href="#Sobremim"><li>Sobre mim</li></a>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#ErickdeOliveira">Erick de Oliveira</a></li>
+                <li><a href="#Obras">Obras</a></li>
+                <li><a href="#Portifólio">Portifólio</a></li>
+                <li><a href="#Sobremim">Sobre mim</a></li>
                </ul>
           </nav>
-          <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-          <script type="text/javascript">
-            $(document).ready(function(){
-              $('.menu').click(function(){
-                $('ul').toggleClass('active');
-              })
-            })
-          </script>
-      </div>
+        </div>
     </header>
 
 
@@ -82,7 +90,6 @@
 
       <section id="Home" class="Home">
         <div id="Imagem_Fundo" class="Imagem_Fundo">
-          <img src="img/Fundo.jpg">
         </div>
         <div id="Imagens" class="Imagens">
         <a href="#ErickdeOliveira">
@@ -102,29 +109,31 @@
         <div class="spacer">
         &nbsp;
         </div>
+        <div data-aos="fade-right">
         <h1>Erick de Oliveira:</h1>
         <h2 class="Salvando">Escritor, Ilustrador, Diagramador</h2>
         <h3>... e outros atributos. Foco na escrita, desenho e ilustração digital. Contudo, trabalho como revisor e diagramador nas horas vagas.</h3>
+    	</div>
       <div class="Serviços">
           <div data-aos="fade-up" class="box">
             <div class="icone"><i class=" fa fa-pencil-square-o" aria-hidden="true"></i></div>
             <div class="Texto_01">
-              <h4>Erick de Oliveira</h4>
-              <p>Erick de Oliveira Bessa Xavi. </p>
+              <h4>Ilustrador</h4>
+              <p> Desenvolvimento de logos, artes gráficas, desenhos.</p>
             </div> 
           </div>
           <div data-aos="fade-down" class="box">
-            <div class="icone"><i class=" fa fa-check" aria-hidden="true"></i></div>
+            <div class="icone"><i class=" fa fa-pencil" aria-hidden="true"></i></div>
             <div class="Texto_01">
-              <h4>Erick de Oliveira</h4>
-              <p>Erick de Oliveira Bessa Xavi. </p>
+              <h4>Escritor</h4>
+              <p> Criação de narrativas romanceadas e visuais.</p>
             </div>  
           </div> 
           <div data-aos="fade-up" class="box">
             <div class="icone"><i class=" fa fa-file-word-o" aria-hidden="true"></i></div>
             <div class="Texto_01">
-              <h4>Erick de Oliveira</h4>
-              <p>Erick de Oliveira Bessa Xavi. </p>
+              <h4>Revisor</h4>
+              <p> Análise ortográfica, de estrutura e semântica.</p>
             </div> 
          </div>
       </div>        
@@ -134,27 +143,26 @@
       <!-- OBRAS ----------------------------->
 
       <section id="Obras" class="Obras">
-        <div class="spacer">
-        &nbsp;
-        </div>
+        <div class="spacer">&nbsp;</div>
+        <div data-aos="fade-left">
         <h1>Obras:</h1>
         <h2 class="Salvando">Só aquelas que estão em papel</h2>
         <h3>... o que não são todas. Mas, atualmente, tenho duas obras escritas e uma em andamento; uma trilogia em andamento. Além disso, pequenos contos e poemas acrescentam em meu histórico.
         </h3>
+    	  </div>
 
-          <div data-aos="fade-down" class="projetos_01" id="projetos_01">
-              <img src="img/Livro_01.jpg" alt="Livro_01"/>
-              <blockquote class="Aspas_01">E ele cavalgou para a floresta com fúria e represália, carregando a Esfera no ato de aniquilar o mal na grande e poderosa batalha.
-                E os dias nasceram mais felizes sob a sombra da Montanha do Norte,
-                cujo povo que da terra vivia não mais sofreria com a dor da tristeza da morte.
-                As auroras brilharam douradas nas almas dos homens jubilosos.
-                Mulheres e filhos cantaram e velhos clamaram para o sorriso da Lua em vitória a crueldade do mal sem idade.
+          <div class="projetos_01" id="projetos_01">
+              <img data-aos="fade-up" src="img/Livro_01.jpg" alt="Livro_01"/>
+              <blockquote data-aos="fade-down" class="Aspas_01">
+              	E ele cavalgou para a floresta com fúria e represália, carregando a Esfera no ato de aniquilar o mal na grande e poderosa batalha. E os dias nasceram mais felizes sob a sombra da Montanha do Norte, cujo povo que da terra vivia não mais sofreria com a dor da tristeza da morte. As auroras brilharam douradas nas almas dos homens jubilosos. Mulheres e filhos cantaram e velhos clamaram para o sorriso da Lua em vitória a crueldade do mal sem idade.
                 <cite class="cite_01">A Jornada de um Assistente e a Esfera da Lua</cite>
            	  </blockquote>
           </div>
-          <div data-aos="fade-up" class="projetos_02" id="projetos_02">
-              <img src="img/Livro_02.png" alt="Livro_02">
-              <blockquote class="Aspas_02">A cada novo mundo um bem nasce, uma vontade ou uma ideia, ou uma criança destinada a um reino sem súditos e territórios sem fronteiras. Herdeira de todos os tesouros acima dos desprezíveis, uma criança – filha das estrelas e das arcanas luzes serpenteantes do mais Norte e Sul – fada-se ao retorno. De tempos em tempos, guiada por mãos além das humanas, azo a escuridão sem oponentes, tamanha natureza cresce guiada para a sua morada ao ponto mais alto; lugar onde a terra compromete-se ao céu e a verdadeira forma retorna ao mundo a cevar esperança e fé nas almas outrora perdidas.
+
+          <div class="projetos_02" id="projetos_02">
+              <img data-aos="fade-up" src="img/Livro_02.png" alt="Livro_02">
+              <blockquote data-aos="fade-down" class="Aspas_02">
+              	A cada novo mundo um bem nasce, uma vontade ou uma ideia, ou uma criança destinada a um reino sem súditos e territórios sem fronteiras. Herdeira de todos os tesouros acima dos desprezíveis, uma criança – filha das estrelas e das arcanas luzes serpenteantes do mais Norte e Sul – fada-se ao retorno. De tempos em tempos, guiada por mãos além das humanas, azo a escuridão sem oponentes, tamanha natureza cresce guiada para a sua morada ao ponto mais alto; lugar onde a terra compromete-se ao céu e a verdadeira forma retorna ao mundo a cevar esperança e fé nas almas outrora perdidas.
               <cite class="cite_02">A Jornada de um Assistente e a Lança de Aurora</cite>
               </blockquote>
           </div>
@@ -166,21 +174,26 @@
         <div class="spacer">
         &nbsp;
         </div>
+        <div data-aos="fade-right">
         <h1>Port..., portfó..., portefólio:</h1>
         <h2 class="Salvando">Meu pai, que coisa</h2>
         <h3>... pois, independente da palavra correta, aqui trago algumas das quais gosto mais. Talvez não sejam as mais refinadas, ainda assim estas me foram as de maior carinho de se desenvolver.</h3>
+    	</div>
 
         <div class="Projetos" id="Projetos">
           <ul>
-            <li><img src="https://via.placeholder.com/1280x720" alt="Projeto_01"></li>
-            <li><a href="#"><img src="https://via.placeholder.com/1280x720" alt="Projeto_02"></a></li>
-            <li><a href="#"><img src="https://via.placeholder.com/1280x720" alt="Projeto_03"></a></li>
-            <li><a href="#"><img src="https://via.placeholder.com/1280x720" alt="Projeto_04"></a></li>
-            <li><a href="#"><img src="https://via.placeholder.com/1280x720" alt="Projeto_05"></a></li>
-            <li><a href="#"><img src="https://via.placeholder.com/1280x720" alt="Projeto_06"></a></li>
-            <li><a href="#"><img src="https://via.placeholder.com/1280x720" alt="Projeto_07"></a></li>
-            <li><a href="#"><img src="https://via.placeholder.com/1280x720" alt="Projeto_08"></a></li>
-            <li><a href="#"><img src="https://via.placeholder.com/1280x720" alt="Projeto_09"></a></li>
+            <li data-aos="fade-left"><img src="img/Logo_EOBX.png" alt="Projeto_01"></li>
+            <li data-aos="fade-left"><img src="img/IMG(1).png" alt="Projeto_02"></li>
+            <li data-aos="fade-left"><img src="img/IMG(2).jpg" alt="Projeto_03"></li>
+            <li data-aos="fade-right"><img src="img/IMG(2).png" alt="Projeto_04"></li>
+            <li data-aos="fade-right"><img src="img/IMG(3).jpg" alt="Projeto_05"></li>
+            <li data-aos="fade-right"><img src="img/IMG(8).jpg" alt="Projeto_06"></li>
+            <li data-aos="fade-left"><img src="img/IMG(4).jpg" alt="Projeto_07"></li>
+            <li data-aos="fade-left"><img src="img/IMG(4).png" alt="Projeto_08"></li>
+            <li data-aos="fade-left"><img src="img/IMG(6).jpg" alt="Projeto_09"></li>
+            <li data-aos="fade-right"><img src="img/IMG(7).png" alt="Projeto_10"></li>
+            <li data-aos="fade-right"><img src="img/IMG(3).png" alt="Projeto_11"></li>
+            <li data-aos="fade-right"><img src="img/IMG(1).jpg" alt="Projeto_12"></li>
           </ul>
         </div>
       </section>
@@ -191,18 +204,26 @@
         <div class="spacer">
         &nbsp;
         </div>
+        <div data-aos="fade-left">
         <h1>Sobre mim:</h1>
         <h2 class="Salvando">O que não é muito</h2>
         <h3>... em vista que estudo e trabalho a maior parte do tempo. Almejo melhorar meus conhecimentos, aprimorando-os, lapidando-os, tornando-me a cada dia um profissional compretente e um probo ser humano.</h3>
-              <div data-aos="fade-right" class="Sobremimfoto">
-              <img class="erickteste" src="img/Erick_Caric.jpg" alt="Erick_Avatar">
+    	</div>
+           <div data-aos="fade-right" class="Sobremimfoto">
+             <img class="erickteste" src="img/Erick_Caric.jpg" alt="Erick_Avatar">
+                <div id="social" class="social">
+          		 <a href="#" data-aos=fade-right class="fa fa-facebook"></a>
+          		 <a href="#" data-aos=fade-up class="fa fa-twitter"></a>
+          		 <a href="#" data-aos=fade-left class="fa fa-pinterest"></a>
+          		</div>
               <p class="textooo">
-          Bem... este sou eu! Gostou de mim? É claro que sim... como não poderia? Haha. Brincadeira a parte, fico feliz que tenha vindo me visitar e, quem sabe, me melhor conhecer? Entre em contato, leia as minhas obras publicadas, visite minhas redes sociais. Quero saber sobre você também! Há tanto a se ver e falar...
+              	Bem... este sou eu! Gostou de mim? É claro que sim... como não poderia? Haha. Brincadeira a parte, fico feliz que tenha vindo me visitar e, quem sabe, me melhor conhecer? Entre em contato, leia as minhas obras publicadas, visite minhas redes sociais. Quero saber sobre você também! Há tanto a se ver e falar...
               </p>
               	<div>
-              		<input id="Botão" type="button" name="answer" value="Contate-me" onclick="showDiv()" />
+              		<input id="Botão" class="Botão" type="button" name="answer" value="Contate-me" onclick="showDiv()" />
               		<a href="#Contate-me"></a>
           		</div>
+
             </div>
       </section>
 
@@ -212,10 +233,9 @@
         <div class="spacer">
         &nbsp;
         </div>
-        <h1>Contate-me:</h1>
-
+        <h1>Contate-me ;)</h1>
         <form>
-          <input class="input_text" type="nome" tabindex="1" placeholder="Nome"><br>
+          <input class="input_text" type="Nome" tabindex="1" placeholder="Nome"><br>
           <input class="input_text" type="email" tabindex="2" placeholder="E-mail"><br>
           <textarea class="input_text" tabindex="3" placeholder="Digite aqui"></textarea><br>
           <input class="button" type="submit">
@@ -230,14 +250,54 @@
                 </p>
 
       </footer>
-      <script type="text/javascript"></script>
-      <script src =" css\aos.js"></script>
-      <script type ="text/javascript">
+
+      <!------ Duração do fade ---
+>      <script src ="css/aos.js"></script>
+      <script>
         AOS.init({
           offset: 200,
           duration: 2000,
         });
       </script>
 
+      <!---<script>
+      	var str = 'Bem... este sou eu! Gostou de mim? É claro que sim... como não poderia? Haha. Brincadeira a parte, fico feliz que tenha vindo me visitar e, quem sabe, me melhor conhecer? Entre em contato, leia as minhas obras publicadas, visite minhas redes sociais. Quero saber sobre você também! Há tanto a se ver e falar...';
+
+      	var spans = '<span>' + str.split('').join('</span><span>') + '</span>';
+      	$(spans).hide().appendTo('.textooo').each(function (i) {
+      	$(this).delay(100 * i).css({
+        display: 'inline',
+        opacity: 0
+    }).animate({
+        opacity: 1
+    }, 10);
+});
+      </script>
+      <script>
+      	var str = 'E ele cavalgou para a floresta com fúria e represália, carregando a Esfera no ato de aniquilar o mal na grande e poderosa batalha. E os dias nasceram mais felizes sob a sombra da Montanha do Norte, cujo povo que da terra vivia não mais sofreria com a dor da tristeza da morte. As auroras brilharam douradas nas almas dos homens jubilosos. Mulheres e filhos cantaram e velhos clamaram para o sorriso da Lua em vitória a crueldade do mal sem idade.';
+
+      	var spans = '<span>' + str.split('').join('</span><span>') + '</span>';
+      	$(spans).hide().appendTo('.Aspas_01').each(function (i) {
+      	$(this).delay(70 * i).css({
+        display: 'inline',
+        opacity: 0
+    }).animate({
+        opacity: 1
+    }, 100);
+});
+      </script>
+      <script>
+      	var str = 'A cada novo mundo um bem nasce, uma vontade ou uma ideia, ou uma criança destinada a um reino sem súditos e territórios sem fronteiras. Herdeira de todos os tesouros acima dos desprezíveis, uma criança – filha das estrelas e das arcanas luzes serpenteantes do mais Norte e Sul – fada-se ao retorno. De tempos em tempos, guiada por mãos além das humanas, azo a escuridão sem oponentes, tamanha natureza cresce guiada para a sua morada ao ponto mais alto; lugar onde a terra compromete-se ao céu e a verdadeira forma retorna ao mundo a cevar esperança e fé nas almas outrora perdidas.';
+
+      	var spans = '<span>' + str.split('').join('</span><span>') + '</span>';
+      	$(spans).hide().appendTo('.Aspas_02').each(function (i) {
+      	$(this).delay(100 * i).css({
+        display: 'inline',
+        opacity: 0
+    }).animate({
+        opacity: 1
+    }, 100);
+});
+      </script>---->
   </body>
 </html>
