@@ -1,107 +1,163 @@
-html, body {margin: 0; padding: 0; height: 100%; background-color: #EAE3EA; scroll-behavior: smooth;}
+html, body {
+  
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #EAE3EA;
+  scroll-behavior: smooth;
 
-section {min-height: 100%;
-}
-a {text-decoration: none;
-}
-li {list-style-type: none;
 }
 
-h1, a {
-font-family: 'Arvo', sans-serif;
-font-weight:; color:#000000;
-text-transform: uppercase; 
-margin: 0 0 0 0;
+section {
+
+  min-height: 100%;
+
+}
+
+a {
+
+  text-decoration: none;
+
+}
+
+li {
+
+  list-style-type: none;
+  transition: all 500ms; 
+  -webkit-transition: 500ms; 
+  -moz-transition: 500ms;
+  -o-transition: 500ms;
+
 }
 
 h1 {
-font-size: 50px;
-margin-right: 10%;
-margin-top: 10px;
-color: white;
-text-shadow: 0 5px 5px rgba( 0, 0, 0, 0.5);
-border-radius: 5px;
+  color: white;
+  margin: 0 0 0 0;
+  font-family: 'Arvo', sans-serif;
+  font-size: 50px;
+  margin-right: 10%;
+  margin-top: 10px;
+  color: white;
+  text-shadow: 0 5px 5px rgba( 0, 0, 0, 0.5);
+  border-top-right-radius: 10px;
+
+}
+
+a {
+
+  font-family: 'Arvo', sans-serif;
+  color:#000000;
+  text-transform: uppercase; 
+  margin: 0 0 0 0;
+
 }
 
 h2 {
-font-family: 'Arvo', serif; 
-font-weight: 400; 
-font-size: 60px; 
-margin: -15px 0 0 0;
-color: white; 
-margin-right: 10%;
-box-shadow: 0 5px 5px rgba( 0, 0, 0, 0.3);
-text-shadow: 0 5px 5px rgba( 0, 0, 0, 0.3);
-border-radius: 5px;
+
+  font-family: 'Arvo', serif; 
+  font-size: 60px; 
+  margin: -15px 0 0 0;
+  color: white; 
+  margin-right: 10%;
+  box-shadow: 0 5px 5px rgba( 0, 0, 0, 0.3);
+  text-shadow: 0 5px 5px rgba( 0, 0, 0, 0.3);
+  border-bottom-right-radius: 10px;
+
 }
 
 h3 {
-font-family: 'Arvo', serif;
-font-weight: 400; 
-font-size: 26px;
-margin-top: 10px;
+
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  font-size: 23px;
+  margin-top: 10px;
+  color: grey;
+
+}
+
+h4 {
+
+  font-family: 'Arvo', serif;
+  font-size: 40px;
+  text-shadow: 0 5px 5px rgba( 0, 0, 0, 0.3);
+
 }
 
 p {
-font-family: 'Arvo', sans-serif; 
-font-size: 22px; 
-font-stretch: semi-expanded; 
-font-kerning: normal;
-color: #7a7a7a;
+
+  font-family: 'Arvo', sans-serif; 
+  font-size: 22px; 
+  font-stretch: semi-expanded; 
+  font-kerning: normal;
+  color: #7a7a7a;
+
 }
 
- #Logo_EOBX, #Obras, #Portifólio, li, img, .button{
-transition: all 500ms; 
--webkit-transition: 500ms; 
--moz-transition: 500ms;
--o-transition: 500ms;
+#Logo_EOBX, #Obras, #Portifólio, img, .button{
+	
+  transition: all 500ms; 
+	-webkit-transition: 500ms; 
+	-moz-transition: 500ms;
+	-o-transition: 500ms;
+	overflow: hidden;
+
 }
-
-
-
 
 .Salvando:after {
-    content: ' .';
-    animation: dots 2s steps(5, end) infinite;
-    margin: 0px 0px 0px 4px;
-    padding: -4px -12px -9px 14px;
-    position: absolute;
-  }
+
+  content: ' .';
+  animation: dots 2s steps(5, end) infinite;
+  margin: 0px 0px 0px 4px;
+  padding: -4px -12px -9px 14px;
+  position: absolute;
+
+}
 
 @keyframes dots {
-  0%, 20% {
-    color: rgba(0,0,0,0);
-    text-shadow:
-      .25em 0 0 rgba(0,0,0,0),
-      .5em 0 0 rgba(0,0,0,0);}
-  40% {
-    color: white;
-    text-shadow:
-      .25em 0 0 rgba(0,0,0,0),
-      .5em 0 0 rgba(0,0,0,0);}
+
+0%, 20% {
+  
+ color: rgba(0,0,0,0);
+ text-shadow:
+ .25em 0 0 rgba(0,0,0,0),
+ .5em 0 0 rgba(0,0,0,0);
+
+}
+  
+40% {
+
+ color: white;
+ text-shadow:
+ .25em 0 0 rgba(0,0,0,0),
+ .5em 0 0 rgba(0,0,0,0);
+
+}
+  
   60% {
     text-shadow:
       .25em 0 0 white,
       .5em 0 0 rgba(0,0,0,0);}
+  
   80%, 100% {
     text-shadow:
       .25em 0 0 white,
       .5em 0 0 white;}
-    }
+}
 
 
 .spacer {
   width: 100%;
   height: 58px;
 }
+
 /* HEADER **************/
 
 
-nav{
+nav {
   width: 100%;
   background: #454545;
   z-index: 3;
-  opacity:0.8;
+  opacity:1;
   transition: .3s;
   position: fixed;
   top: 0;
@@ -114,12 +170,11 @@ nav{
 
 
 nav.color {
-  background: rgb(152,209,176, 1);
+  background: rgb(152,209,176, 0.5);
 }
 
-nav.color a{
+nav.color a {
 color: #ffffff;
-
 }
 
 nav.color ul li:hover {
@@ -146,16 +201,26 @@ ul li {
 }
 
 
-#Logo_EOBX img{
+#Logo_EOBX {
+width:125px;
+margin:0 auto;
+overflow:hidden;
+float:left;
+}
+
+#Logo_EOBX img {
+  width: 100px;
   float: left;
-  width: 150px;
-  height: 80px;
+  opacity: 0.8;
+  margin-left: 20px;
+   -webkit-filter: grayscale(50%);
 }
 
 #Logo_EOBX :hover {
   z-index: 1;
-  transform: scale(1.2);
+  transform: scale(1.1);
   opacity: 1;
+   -webkit-filter: grayscale(0%);
 }
 
 .toggle {
@@ -173,24 +238,18 @@ ul li {
 /* HOME **************/
 
 
-section .Imagem_Fundo {
+.Home {
+  background: url(../img/Fundo.jpg) no-repeat top center fixed;
+  background-size: cover;
   width: 100%;
-  height: 700px;
-  overflow: hidden;
-  position: relative;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: center;
 }
 
-section .Imagem_Fundo img {
-  width: 100%;
-  max-height: 200%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform:translate(-50%);
-}
-
-
-.Imagens{
+.Imagens {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -202,7 +261,7 @@ section .Imagem_Fundo img {
   transition: all 1.0s linear;
 }
 
-#Erick_Foto_Home img{
+#Erick_Foto_Home img {
     max-width:300px;
     max-height:300px;
     width: auto;
@@ -213,14 +272,17 @@ section .Imagem_Fundo img {
 }
 
 #Erick_Foto_Home :hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   opacity: 1;
   box-shadow: 0 5px 5px rgba( 0, 0, 0, 0.3);
 }
 
-#Seta_Foto_Home img {
-  margin-top: 30%;
-  opacity: 0.5;
+.Seta_Foto_Home {
+  height: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
 }
 
 #Seta_Foto_Home :hover {
@@ -232,55 +294,51 @@ section .Imagem_Fundo img {
 /* Erick de Oliveira **************/
 
 #ErickdeOliveira {
-  clear: both;
-  width: 100%;
+  min-height: unset;
 }
 
-#ErickdeOliveira h1{
-  padding-left: 7%;
+#ErickdeOliveira h1 {
+  padding-left: 8%;
     background-color: #856357;
     margin-right: 6%;
 }
 
-#ErickdeOliveira h2{
-  padding-left: 7%;
+#ErickdeOliveira h2 {
+  padding-left: 8%;
     background-color: #856357;
     margin-right: 6%;
 }
 
-#ErickdeOliveira h3{
+#ErickdeOliveira h3 {
   text-align: justify;
-  padding-left: 6%;
+  padding-left: 8%;
   margin-right: 10%;
 }
 
 .Serviços {
-  margin-left: 8%;
+  margin-left: 7.8%;
 }
 
 
 .Serviços .box {
   position: relative;
-  width: calc(340px);
-  height: calc(260px);
-  background: #000;
+  width: calc(370px);
+  height: calc(245px);
   float: left;
-  margin:6px;
+  margin: 6px;
   box-sizing: border-box;
   overflow: hidden;
   border-radius: 10px;
 }
 
 .Serviços .box .icone {
-
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: #f00;
-transition: 0.5s;
-z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 1;
 }
 
 .Serviços .box:hover .icone {
@@ -322,10 +380,13 @@ z-index: 1;
 }
 
 .Serviços .box .Texto_01 h4{
-  margin:0 0 0 10px;
-  padding: 0;
-  color: #fff;
-  font-size: 24px;
+    margin: 0 0 0 10px;
+    padding: 0;
+    color: #fff;
+    opacity: 0.8;
+    background: #856357;
+    border-radius: 10px;
+    margin-left: 0;
 }
 
 .Serviços .box .Texto_01 p{
@@ -363,6 +424,8 @@ z-index: 1;
 #Obras {
   width: 100%;
   clear: both;
+  overflow: hidden;
+  min-height: 200%;
 }
 
 #Obras h1{
@@ -370,6 +433,8 @@ z-index: 1;
   background-color: #91B49C;
   margin-left: 6%;
   margin-right: 0;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 10px;
 }
 
 #Obras h2{
@@ -377,11 +442,14 @@ z-index: 1;
   background-color: #91B49C;
   margin-left: 6%;
   margin-right: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 0px;
+
 }
 
 #Obras h3{
   text-align: justify; 
-  padding-left: 6%;
+  padding-left: 8%;
   margin-right: 10%;
   margin-left: 0%;
 }
@@ -443,18 +511,13 @@ text-align: right;
 }
 
 
-
-<div data-aos="projetos_01"></div>
-
-<div data-aos="projetos_02"></div>
-
  #projetos_01{
   clear: both;
-  padding-top: 8%;
+  padding-top: 2%;
  }
 
 .projetos_01{
-  margin-left: 6%;
+  margin-left: 8%;
   margin-right: 10%;
 }
 
@@ -482,11 +545,10 @@ text-align: right;
 
  .projetos_02{
   margin-right: 10%;
-  margin-left: 6%;
+  margin-left: 8%;
 }
 
 .projetos_02::after{
-  margin-top: 15%;
   content: "";
   clear: both;
   display: table;
@@ -531,33 +593,34 @@ text-align: right;
 }
 
 #Portifólio h1{
-  padding-left: 7%;
+    padding-left: 8%;
     background-color: #856357;
     margin-right: 6%;
 }
 
 #Portifólio h2{
-  padding-left: 7%;
+    padding-left: 8%;
     background-color: #856357;
     margin-right: 6%;
 }
 
 #Portifólio h3{
-  text-align: justify; padding-left: 6%;
+  text-align: justify; 
+  padding-left: 8%;
   margin-right: 10%;
 }
 
 .Projetos {
-  margin-left: 4.5%;
+  margin-left: 8%;
 }
 
 
 #Projetos img{
-  padding: 10px;
   width: 300px;
   height: 300px;
   border-radius: 10px;
   margin: 0 0 0 4px;
+  border: 10px solid white;
 }
 
 #Projetos ul{
@@ -567,6 +630,8 @@ text-align: right;
 #Projetos ul li{
   float: left;
 }
+
+
 
 /* Sobre Mim **************/
 
@@ -579,31 +644,38 @@ text-align: right;
 
 #Sobremim h1{
     text-align: left;
-    padding-left: 1%;
+    padding-left: 2%;
     background-color: #91B49C;
     margin-left: 6%;
     margin-right: 0;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 10px;
 }
 
 #Sobremim h2{
   text-align: left;
-  padding-left: 1%;
+  padding-left: 2%;
   background-color: #91B49C;
   margin-left: 6%;
   margin-right: 0;
-  box-shadow: 0 5px 5px rgba( 0, 0, 0, 0.3);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 0px;
 }
 
 #Sobremim h3{
   text-align: justify;
-  padding-left: 6%;
+  padding-left: 8%;
   padding-right: 10%;
+  margin-bottom: 0;
 }
 
 
 #Sobremim {
   text-align: center;
   clear: both;
+  margin-bottom: 2%;
+  overflow: hidden;
+  min-height: 103%;
 }
 
 #Sobremim img {
@@ -611,6 +683,8 @@ text-align: right;
   float: left;
   border-radius: 50%;
   margin: 0 4% 0 0;
+  max-width: 300px;
+  max-height: 300px;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   transform-style: preserve-3d;
@@ -618,7 +692,7 @@ text-align: right;
 }
 
 #Sobremim img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1, 1.1);
   transition: all 0.5s linear;
   opacity: 1;
   box-shadow: 0 5px 5px rgba( 0, 0, 0, 0.3);
@@ -628,9 +702,46 @@ text-align: right;
 
 #Sobremim p {
   text-align: justify;
-  padding-top: 6%;
+  padding-top: 5%;
+  color: darkslategray;
 }
 
+.social {
+  position: absolute;
+  padding-left: 5vh;
+  bottom: -120px;
+}
+
+.social .fa{
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  transition: all 0.5s linear;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    transition: all 0.5s linear;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
 
 /* Contato **************/
 
@@ -643,6 +754,7 @@ text-align: right;
   background-color: #856357;
   margin-right: 0;
   box-shadow: 0 5px 5px rgba( 0, 0, 0, 0.3);
+  border-top-right-radius: 0px;
 }
 
 #ofim {
@@ -673,12 +785,13 @@ form input {
 }
 
 form textarea {
-  width: 550px;
-  height: 200px;
-  resize: none;
+    width: 550px;
+    height: 200px;
+    resize: none;
+    padding-top: 11px;
 }
 
-.input_text {
+.text {
   color: #494949;
   padding-left: 10px;
 }
@@ -698,9 +811,6 @@ form textarea {
 
 ::-webkit-scrollbar-thumb {
     background: #91B49C; 
-}
-::-webkit-scrollbar-thumb:window-inactive {
-  background: #91B49C; 
 }
 
 .button {
@@ -724,29 +834,45 @@ footer {
 }
 
 footer p {
-  text-align: center;
-  color: #f0f0f0;
-  padding-top: 20px;
+    text-align: center;
+    color: #f0f0f0;
+    padding: 23px 0 0 0;
+    margin: 0 0 0 0;
 }
 
 #Botão {
-  font-size: 30px;
+    font-size: 30px;
     font-family: 'Arvo', sans-serif;
-    background-color: #98d1b0;
-    color: white;
+    background-color: transparent;
+    color: #739E85;
     transition: all 0.5s linear;
+    border: 2px solid #739E85;
     border-radius: 5px;
+    padding: 10px 24px;
 }
 
 #Botão:hover {
-    font-size: 30px;
-    font-family: 'Arvo', sans-serif;
-    background-color: #91B49C;
     transform-style: preserve-3d;
     transition: all 0.5s linear;
+    box-shadow: inset 500px 0 0 0 #91B49C;
+    overflow: hidden;
     color: white;
-    margin-top: 5px;
-    box-shadow: 0px 5px 5px 0px rgba( 0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #98d1b0;
+}
+
+::selection {
+    color: white;
+    background: #98d1b0;
+}
+
+input, textarea, select, a, #Botão{ 
+  outline: none; 
 }
 
 /* MEDIA QUERIES ***************************/
@@ -786,15 +912,10 @@ footer p {
   padding-top: 0px;
  }
 
- .Imagem_Fundo img {
-  max-width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform:translate(-50%);
-}
 
+#Botão {
+  width: 100%;
+}
 
 }
 
@@ -833,17 +954,9 @@ footer p {
   }
 
 
-  .Imagem_Fundo img {
-  max-width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform:translate(-50%);
-}
-
 .Obras {
   clear: both;
+  overflow: hidden;
 }
 
 .projetos_02 p {
@@ -871,6 +984,10 @@ footer p {
   float: none;
 }
 
+#Botão {
+  width: 100%;
+}
+
 }
 
 
@@ -884,13 +1001,10 @@ footer p {
     margin-left: 30px;
   }
 
-  .Imagem_Fundo img {
-  max-width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform:translate(-50%);
+  #Sobremim p {
+  text-align: justify;
+  margin: 0 0 0 0;
+  padding-top: 0;
 }
 
   #Erick_Foto_Home img{
@@ -926,7 +1040,6 @@ footer p {
   }
 
   header nav ul {
-    height: 1;
     overflow: hidden;
     margin:0;
     padding: 0;
@@ -962,11 +1075,12 @@ footer p {
  form input, form textarea {
     width: 50%;
   }
-  .button {
+
+.button {
     width: 55%;
-  }
-  }
 }
+  
+
 
 
 
