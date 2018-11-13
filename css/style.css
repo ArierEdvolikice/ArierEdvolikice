@@ -834,7 +834,7 @@ form textarea {
 footer {
   width: 100%;
   height: 70px;
-  background-color: #3f3f3f;
+  background: url(../img/Fundo.jpg);
 }
 
 footer p {
