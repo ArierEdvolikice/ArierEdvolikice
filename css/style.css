@@ -291,7 +291,7 @@ float:left;
 /* Erick de Oliveira **************/
 
 #ErickdeOliveira {
-  min-height: 50%;
+  min-height: 65vh;
 }
 
 #ErickdeOliveira h1 {
@@ -319,8 +319,8 @@ float:left;
 
 .Serviços .box {
   position: relative;
-  width: calc(370px);
-  height: calc(245px);
+  width: calc(464px);
+  height: calc(263px);
   float: left;
   margin: 6px;
   box-sizing: border-box;
@@ -422,7 +422,7 @@ float:left;
   width: 100%;
   clear: both;
   overflow: hidden;
-  min-height: none;
+  min-height: 150vh;
 }
 
 #Obras h1{
@@ -544,6 +544,7 @@ text-align: right;
  .projetos_02{
   margin-right: 10%;
   margin-left: 8%;
+  margin-bottom: 1%;
 }
 
 .projetos_02::after{
