@@ -291,7 +291,7 @@ float:left;
 /* Erick de Oliveira **************/
 
 #ErickdeOliveira {
-  min-height: unset;
+  min-height: 50%;
 }
 
 #ErickdeOliveira h1 {
@@ -422,7 +422,7 @@ float:left;
   width: 100%;
   clear: both;
   overflow: hidden;
-  min-height: 200%;
+  min-height: none;
 }
 
 #Obras h1{
