@@ -617,8 +617,8 @@ text-align: right;
 
 
 #Projetos img{
-  width: 300px;
-  height: 300px;
+  width: 30vh;
+  height: 30vh;;
   border-radius: 10px;
   margin: 0 0 0 4px;
   border: 10px solid white;
