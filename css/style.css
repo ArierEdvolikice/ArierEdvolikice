@@ -10,7 +10,7 @@ html, body {
 
 section {
 
-  min-height: 100%;
+  min-height: 90%;
 
 }
 
@@ -243,6 +243,7 @@ float:left;
   color: white;
   text-align: center;
   background-position-y: 50%;
+  min-height: 100%;
 }
 
 .Imagens {
