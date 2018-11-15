@@ -313,13 +313,13 @@ float:left;
 }
 
 .Serviços {
-  margin-left: 7.8%;
+  margin: auto 97px;
 }
 
 
 .Serviços .box {
   position: relative;
-  width: calc(464px);
+  width: calc(360px);
   height: calc(263px);
   float: left;
   margin: 6px;
@@ -334,7 +334,7 @@ float:left;
   left: 0;
   width: 100%;
   height: 100%;
-  transition: 0.5s;
+  transition: 1s;
   z-index: 1;
 }
 
@@ -352,7 +352,7 @@ float:left;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 80px;
-  transition: 0.5s;
+  transition: 1s;
   color: #fff;
 }
 
@@ -367,7 +367,7 @@ float:left;
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
-  transition: 0.5s;
+  transition: 1s;
   opacity: 0.5;
 }
 
@@ -521,8 +521,8 @@ text-align: right;
     border: transparent thin solid;
     float: left;
     max-width: 600px;
-    width: 30vh;
-    height: 30vh;
+    width: 40vh;
+    height: 60vh;
     border: 10px solid white;
     margin-right: 3%;
     border-radius: 10px;
@@ -557,13 +557,14 @@ text-align: right;
     border: transparent thin solid;
     float: right;
     max-width: 600px;
-    width: 30vh;
-    height: 30vh;
+    width: 40vh;
+    height: 60vh;
     border: 10px solid white;
     margin-left: 3%;
     border-radius: 10px;
     position: relative;
     z-index: 1;
+    margin-top: 2%;
 }
 
 .projetos_02 blockquote {
@@ -722,13 +723,10 @@ text-align: right;
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
-  transition: all 0.5s linear;
+  transition: all 1s linear;
 }
 
-.fa:hover {
-    opacity: 0.7;
-    transition: all 0.5s linear;
-    width: 50px;
+
 }
 
 .fa-facebook {
@@ -759,6 +757,7 @@ text-align: right;
   margin-right: 0;
   box-shadow: 0 5px 5px rgba( 0, 0, 0, 0.3);
   border-top-right-radius: 0px;
+  padding: 10px;
 }
 
 #ofim {
@@ -771,7 +770,7 @@ form {
 
 form input, textarea {
   font-family:'Arvo', serif;
-  font-size: 15px; 
+  font-size: 20px; 
   margin-bottom: 10px;
   border-radius: 2px;
   border: 2px solid;
@@ -779,13 +778,16 @@ form input, textarea {
   outline: none;
 }
 
-form input:first-child {
+form input:first-child::hover {
   margin-top: 10px;
 }
 
 form input {
-  width: 552px;
-  height: 30px;
+  width: 550px;
+  height: 45px;
+  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+  -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+  box-sizing: border-box;
 }
 
 form textarea {
@@ -793,25 +795,17 @@ form textarea {
     height: 200px;
     resize: none;
     padding-top: 11px;
+    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+    -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+    box-sizing: border-box;
 }
+
 
 .text {
   color: #494949;
   padding-left: 10px;
 }
 
-::-webkit-input-placeholder{color: #999999;}
-::-moz-placeholder {color: #999999;}
-::-ms-input-placeholder {color: #999999;}
-::-moz-placeholder {color: #999999;}
-::-webkit-scrollbar {
-    width: 6px;
-}
- 
-/* Track */
-
-
-/* Handle */
 
 ::-webkit-scrollbar-thumb {
     background: #91B49C; 
@@ -820,7 +814,7 @@ form textarea {
 .button {
   background-color: #f0f0f0;
   color: #494949;
-  width: 566px;
+  width: 550px;
   height: 50px;
 }
 
@@ -857,7 +851,7 @@ footer p {
 
 #Botão:hover {
     transition: all 0.5s linear;
-    box-shadow: inset 500px 0 0 0 #91B49C;
+    box-shadow: inset 800px 0 0 0 #91B49C;
     overflow: hidden;
     color: white;
     cursor: pointer;
@@ -875,7 +869,57 @@ footer p {
 }
 
 input, textarea, select, a, #Botão{ 
-  outline: none; 
+  outline: none;
+  resize: none;
+  transition: all 0.5s linear;
+}
+
+textarea, input {
+  color: #999999;
+}
+
+.input_text:hover {
+    background-color: #B08373;
+    color: white;
+    transition: all 0.5s linear;
+}
+
+input:hover::-webkit-input-placeholder {
+    color: white;
+    transition: all 0.5s linear;
+}
+
+textarea:hover::-webkit-input-placeholder {
+    color: white;
+    transition: all 0.5s linear;
+}
+
+input[type="Nome"]:hover {
+  color: white;
+}
+
+input[type=Nome] {
+    border: 2px solid #B08373;
+}
+
+input[type=email] {
+    border: 2px solid #B08373;
+}
+
+textarea[type=digitar] {
+    border: 2px solid #B08373;
+}
+
+input[type=Nome]:focus {
+    border: 2px solid #856357;
+}
+
+input[type=email]:focus {
+    border: 2px solid #856357;
+}
+
+textarea[type=digitar]:focus {
+    border: 2px solid #856357;
 }
 
 /* MEDIA QUERIES ***************************/
@@ -898,18 +942,21 @@ input, textarea, select, a, #Botão{
 }
 
 .Serviços{
-  width: 100%;
-  margin: 0px 0px 0px 6%;
+  margin: auto 97px;
 }
 
 #Projetos {
     width: auto;
 }
 
-  .projetos_02 p {
+.projetos_02 p {
   padding-top: 0px;
   margin: 0 0 0 0;
- }
+}
+
+.projetos_01 {
+  margin: auto 50px;
+}
 
  .projetos_01 p {
   padding-top: 0px;
@@ -967,9 +1014,27 @@ input, textarea, select, a, #Botão{
   margin: 0 0 0 0;
  }
 
+ .projetos_01 {
+    margin: auto 50px;
+ }
+
  .projetos_01 p {
   padding-top: 0px;
  }
+
+ .projetos_02 blockquote {
+    padding-top: 11.5%;
+    text-align: justify;
+    margin: 0 0 0 0;
+
+  }
+
+   .projetos_01 blockquote {
+    padding-top: 11.5%;
+    text-align: justify;
+    margin: 0 0 0 0;
+
+  }
 
 
  form input, form textarea {
@@ -999,90 +1064,240 @@ input, textarea, select, a, #Botão{
 
 
 @media screen and (max-width: 480px){
-  #Logo_EOBX {
+
+#Logo_EOBX {
+
     width: 90px;
     margin-left: 30px;
-  }
+}
 
-  #Sobremim p {
+h1 {
+
+  font-size: 30px;
+  padding-bottom: 15px;
+
+}
+
+#Contate-me h1 {
+  padding: 10px;
+}
+
+.projetos_02 blockquote {
+
+    padding-top: 11.5%;
+    text-align: justify;
+    margin: 0 0 0 0;
+    font-size: 19px;
+}
+
+.projetos_01 blockquote {
+
+  padding-top: 11.5%;
   text-align: justify;
   margin: 0 0 0 0;
-  padding-top: 0;
+  font-size: 19px;
 }
 
-  #Erick_Foto_Home img{
-    width: 200px;
-    height: 200px;
-  }
+h2 {
 
-  #Serviços {
-    width: auto;
-  }
+  font-size: 38px; 
 
-#Serviços div{
+}
+
+h3 {
+
+  font-size: 18px;
+
+}
+
+.Sobremimfoto {
+
+  margin-right: 14%;
+  margin-left: 14%;
+  padding-top: 20px;
+
+}
+
+#Sobremim p {
+
+  text-align: justify;
+  font-size: 19px;
+
+}
+
+#Erick_Foto_Home img {
+
+  width: 200px;
+  height: 200px;
+
+}
+
+#Serviços {
+
+  width: auto;
+
+}
+
+#Serviços div {
+
   width: 55%;
+
 }
 
-.Serviços{
-  width: 100%;
+.Serviços {
+
+  margin-left: 12%;
+
+}
+
+#Projetos img {
+
+  margin: auto 30px;
+
+}
+
+#projetos_01 img {
+
   float: none;
-  margin-left: 5%;
+
 }
 
-#projetos_01 img{
+#projetos_02 img {
+
   float: none;
+
 }
 
-#projetos_02 img{
-  float: none;
+.Serviços .box {
+
+  position: relative;
+  width: calc(264px);
+  height: calc(163px);
+  float: left;
+  margin: 6px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+
 }
 
-  header nav{
-    margin:0;
-    float: none;
-  }
+.Serviços .box:hover .Texto_01 {
+    top: 80px;
+    opacity: 1;
+}
 
-  header nav ul {
-    overflow: hidden;
-    margin:0;
+.Serviços .box:hover .icone {
+    top: 12px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.Serviços .box .Texto_01 {
+    position: absolute;
+    top: 100%;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 1s;
+    opacity: 0.5;
+}
+
+.Serviços .box .Texto_01 h4 {
+    margin: 0 0 0 10px;
     padding: 0;
-    width: 100%;
-  }
-  header nav ul.open {
-    height: auto;
-  }
+    color: #fff;
+    opacity: 0.8;
+    background: #856357;
+    border-radius: 10px;
+    margin-left: 0;
+    font-size: 20px;
+}
 
-  header nav ul li {
-    width: 100%;
-    padding: 5px 0;
+.Serviços .box .Texto_01 p {
     margin: 0;
-    font-size: 11px;
-    border-top: 1px solid #91B49C;
-  }
+    padding: 0;
+    color: #fff;
+    font-size: 15px;
+}
 
-  header nav ul li:hover {
-    background-color: #eeeeee;
-  }
+header nav {
 
-  #Home h1 {
-    font-size: 60px;
-    margin-top: 200px;
-  }
+  margin:0;
+  float: none;
 
-  #Home h2 {
-    width: 70%;
-    height: auto;
-  }
+}
 
+header nav ul {
 
- form input, form textarea {
-    width: 50%;
-  }
+  overflow: hidden;
+  margin:0;
+  padding: 0;
+  width: 100%;
 
-  .button {
-    width: 55%;
-  }
+}
+
+header nav ul.open {
+
+  height: auto;
+
+}
+
+header nav ul li {
+
+  width: 100%;
+  padding: 5px 0;
+  margin: 0;
+  font-size: 11px;
+  border-top: 1px solid #91B49C;
+
+}
+
+header nav ul li:hover {
+
+  background-color: #eeeeee;
+
+}
+
+#Home h1 {
+
+  font-size: 60px;
+  margin-top: 200px;
+
+}
+
+#Home h2 {
+
+  width: 70%;
+  height: auto;
+
+}
+
+#Sobremim img {
+
+  width: 80%;
+  border-radius: 50%;
+  margin: auto 30px;
+  margin-bottom: 10%;
+
+}
+
+form input, form textarea {
+
+  width: 50%
+  padding-top: 5%;
   
+}
+
+.button {
+
+  width: 72.3%;
+  
+}
+  
+}
 
 
 
