@@ -824,14 +824,17 @@ form textarea {
 }
 
 .button {
-  background-color: #f0f0f0;
-  color: #494949;
   width: 550px;
   height: 50px;
+  background-color: transparent;
+  color: #739E85;
+  transition: all 1s linear;
+  border: 2px solid #739E85;
+  border-radius: 5px;
 }
 
 .button:hover{
-  background-color: #91B49C;
+  box-shadow: inset 800px 0 0 0 #91B49C;
   color: white;
 }
 
