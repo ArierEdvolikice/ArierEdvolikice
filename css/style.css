@@ -806,6 +806,18 @@ form textarea {
   padding-left: 10px;
 }
 
+::-webkit-input-placeholder{color: #999999;}
+::-moz-placeholder {color: #999999;}
+::-ms-input-placeholder {color: #999999;}
+::-moz-placeholder {color: #999999;}
+::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+/* Track */
+
+
+/* Handle */
 
 ::-webkit-scrollbar-thumb {
     background: #91B49C; 
