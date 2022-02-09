@@ -1,1 +1,1 @@
-# https://arieredvolikice.github.io/ArierEdvolikic.github.io/#Home
+# https://arieredvolikice.github.io/ArierEdvolikice/#Home
